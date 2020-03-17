@@ -1,9 +1,0 @@
-question=input("characters in your spell bee(newspaper)? ")     #the characters you are going to input which are in your newspaper
-with open('small_dictionary.txt', 'r') as myfile:               #reads the txt file and converts into a string
-    data = myfile.read()
-words = data.split()                                            #splits the string into list of all the words in the string
-
-
-for word in words:
-    if sorted(question) == sorted(word):                        #arranges the characters of the spell bee characters in alphabetical order while comparing with the alphabetical character list order of the word
-       print(word)
